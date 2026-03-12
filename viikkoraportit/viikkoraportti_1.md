@@ -3,6 +3,8 @@
 
    Valitsin projektin aiheen ja suunnittelin teknistä toteutusta.
 
+   Käytin projektin parissa noin 2,5 tuntia.
+
 3. Miten ohjelma on edistynyt?
 
     Itse projektia en ole vielä ole ehtinyt aloittanut, mutta kopioin olemassa olleen projektinalkuni pohjaksi tälle projektille.
