@@ -1,5 +1,5 @@
-# Finnish Sign Language alphabet detection
-Finnish Sign Language alphabet detection multilayer perceptron made as a DSA course project. The MLP is self-trained and made without the use of pre-made machine learning libraries.
+# Finnish Sign Language Alphabet Perceptron
+The Fish-SLAP (**Fi**nni**sh** **S**ign **L**anguage **A**lphabet **P**erceptron) is a Finnish sign language alphabet detection multilayer perceptron made as a DSA course project. The MLP is trained using self-made training data and built without the use of pre-made machine learning libraries.
 
 ## Ohjeet datan keräykseen
 1. Kloonaa repo omalle koneellesi
