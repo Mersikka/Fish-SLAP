@@ -4,7 +4,7 @@ import time
 import cv2
 import mediapipe as mp
 import numpy as np
-from db import landmark_values_to_db, delete_last_insert
+from db import delete_last_insert, landmark_values_to_db
 from mediapipe.tasks.python import vision
 from mediapipe.tasks.python.vision import drawing_styles, drawing_utils
 

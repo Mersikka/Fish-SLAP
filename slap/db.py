@@ -20,4 +20,10 @@ async def delete_last_insert():
         print(last_id)
         await crud.delete(table="landmarks", where="id = ?", args=[last_id])
         
-    
+async def fetch_training_data():
+    async with AsyncTursoConnection() as conn:
+        crud = AsyncTursoCRUD(conn)
+        data = await crud.read(table="landmarks", columns="symbol, landmark_coords")
+        data = [(row[0], json.loads(row[1])) for row in data["rows"]]
+
+        return data
