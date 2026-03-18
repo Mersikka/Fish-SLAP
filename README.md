@@ -1,4 +1,4 @@
-# Finnish Sign Language Alphabet Perceptron
+# Fish-SLAP
 The Fish-SLAP (**Fi**nni**sh** **S**ign **L**anguage **A**lphabet **P**erceptron) is a Finnish sign language alphabet detection multilayer perceptron made as a DSA course project. The MLP is trained using self-made training data and built without the use of pre-made machine learning libraries.
 
 ## Ohjeet datan keräykseen
@@ -10,7 +10,7 @@ The Fish-SLAP (**Fi**nni**sh** **S**ign **L**anguage **A**lphabet **P**erceptron
 6. Profit
 
 ## Määrittelydokumentti
-Projektin määrittelydokumentin voi löytää [täältä.](https://github.com/Mersikka/Sign-Language-Alphabet-Perceptron/blob/main/MAARITTELYDOKUMENTTI.md)
+Projektin määrittelydokumentin voi löytää [täältä.](https://github.com/Mersikka/Fish-SLAP/blob/main/MAARITTELYDOKUMENTTI.md)
 
 ## Viikkoraportit
-Projektin viikkoraportit voi löytää [täältä.](https://github.com/Mersikka/Sign-Language-Alphabet-Perceptron/tree/main/viikkoraportit)
+Projektin viikkoraportit voi löytää [täältä.](https://github.com/Mersikka/Fish-SLAP/tree/main/viikkoraportit)
