@@ -1,5 +1,6 @@
 import json
 
+import numpy as np
 from dotenv import load_dotenv
 from turso_python import AsyncTursoConnection, AsyncTursoCRUD
 
@@ -24,6 +25,7 @@ async def fetch_training_data():
     async with AsyncTursoConnection() as conn:
         crud = AsyncTursoCRUD(conn)
         data = await crud.read(table="landmarks", columns="symbol, landmark_coords")
-        data = [(row[0], json.loads(row[1])) for row in data["rows"]]
+        values = np.array([np.array(json.loads(row[1])) for row in data["rows"]])
+        labels = [row[0] for row in data["rows"]]
 
-        return data
+        return (values, labels)
