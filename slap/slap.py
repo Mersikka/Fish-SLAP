@@ -1,5 +1,6 @@
 import random
 
+import landmark_loader as loader
 import numpy as np
 
 
@@ -9,7 +10,7 @@ class Slap:
         self.num_layers = len(sizes)
         self.sizes = sizes
         self.biases = [np.random.randn(y, 1) for y in sizes[1:]]
-        self.weights = [np.random.randn(y, x) for x, y in  zip(sizes[:1], sizes[1:])]  # noqa: RUF007
+        self.weights = [np.random.randn(y, x) for x, y in zip(sizes[:-1], sizes[1:])]  # noqa: RUF007
 
 
     def feedforward(self, a):
@@ -28,8 +29,8 @@ class Slap:
         epoch, and partial progress printed out.  This is useful for
         tracking progress, but slows things down substantially."""
         if test_data:
-            n_test = len(test_data)
-        n = len(training_data)
+            n_test = len(list(test_data))
+        n = len(list(training_data))
         for j in range(epochs):
             random.shuffle(training_data)
             mini_batches = [
@@ -104,7 +105,7 @@ class Slap:
         neuron in the final layer has the highest activation."""
         test_results = [(np.argmax(self.feedforward(x)), y)
                         for (x, y) in test_data]
-        return sum(int(x == y) for (x, y) in test_results)
+        return sum(int(x == loader.SUPPORTED_SYMBOLS.index(y)) for (x, y) in test_results)
 
     def cost_derivative(self, output_activations, y):
         return (output_activations-y)
