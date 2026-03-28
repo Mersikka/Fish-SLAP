@@ -1,4 +1,4 @@
-# Viikko 1
+# Viikko 2
 1. Mitä olen tehnyt tällä viikolla?
 
    Sain datankeräysohjelman valmiiksi, keräsin harjoitusdataa ja tein ensiversion aakkostunnistusneuroverkosta.
